@@ -1,0 +1,19 @@
+{
+  "name": "movie",
+  "version": "1.0.0",
+  "description": ".navbar-container.active {",
+  "main": "  color: black;",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitrisonnic/movie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitrisonnic/movie/issues"
+  },
+  "homepage": "https://github.com/dmitrisonnic/movie#readme"
+}
