@@ -13,16 +13,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <title>movie</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="navbar-container">
-        <div class="logo-container">
-          <h1 class="logo">Movies</h1>
-        </div>
-        <div class="menu-container">
-          <ul class="menu-list">
+        <title>movie</title>
+        </head>
+        <body>
+          <div class='wrraper-container'>
+       <div class="navbar">
+               <div class="navbar-container">
+           <div class="logo-container">
+           <h1 class="logo">Movies</h1>
+          </div>
+           <div class="menu-container">
+            <ul class="menu-list">
             <li class="menu-list-item active">Home</li>
             <li class="menu-list-item">Movies</li>
             <li class="menu-list-item">Series</li>
@@ -39,118 +40,89 @@
           <div class="toggle">
             <i class="fas fa-moon toggle-icon"></i>
             <i class="fas fa-sun toggle-icon"></i>
-            <div class="taggle-ball"></div>
+            <div class="toggle-ball"></div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="sidebar">
-      <i class="left-menu-icon fas fa-search"></i>
-      <i class="left-menu-icon fas fa-home"></i>
-      <i class="left-menu-icon fas fa-users"></i>
-      <i class="left-menu-icon fas fa-bookmark"></i>
-      <i class="left-menu-icon fas fa-tv"></i>
-      <i class="left-menu-icon fas fa-hourglass-start"></i>
-      <i class="left-menu-icon fab fa-cc-visa"></i>
-    </div>
-    <div class="container">
-      <div class="content-container">
-        <div
-          class="featured-content"
-          style="
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
-              url('img/f-1.jpg');
-          "
-        >
-          <img class="featured-title" src="img/f-t-1.png" alt="" />
-          <p class="featured-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-            provident aliquid architecto voluptatum dolore totam deserunt porro
-            id dolores cumque dignissimos dicta animi corrupti natus quibusdam,
-            obcaecati blanditiis. Dicta, similique.
-          </p>
-          <button class="featured-button">WATCH</button>
+       </div>
+        </div>
+         <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+       <i class="left-menu-icon fas fa-home"></i>
+       <i class="left-menu-icon fas fa-users"></i>
+       <i class="left-menu-icon fas fa-bookmark"></i>
+       <i class="left-menu-icon fas fa-tv"></i>
+       <i class="left-menu-icon fas fa-hourglass-start"></i>
+       <i class="left-menu-icon fab fa-cc-visa"></i>
+         </div>
+         <div class="content-display"></div>
+         <div class="container">
+           <div class="content-container">
+             <div
+             class="featured-content">
+        
+        <img class="featured-title" src="img/f-t-1.png" alt="" />
+        <div class="conteiner">
+          
+            <form>
+              <div class="form-group">
+                <input type="text " id="inputValue" />
+              </div>
+              <button type="submit" id="search">Search a movie</button>
+            </form>
+          </div>
         </div>
         <div class="movie-list-container">
           <h1 class="movie-list-title">NEW RELEASES</h1>
-          <div class="movie-list-wrapper">
+            <div class="movie-list-wrapper">
             <div class="movie-list">
-              <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/1.jpeg" alt="" />
-                <span class="movie-list-item-title">Her</span>
-                <p class="movie-list-item-desc">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Suscipit vitae quo tenetur eius error nobis iure accusamus
-                  rerum
-                </p>
-                <button class="movie-list-item-button">Watch</button>
-              </div>
-              <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/1.jpeg" alt="" />
-                <span class="movie-list-item-title">Her</span>
-                <p class="movie-list-item-desc">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Suscipit vitae quo tenetur eius error nobis iure accusamus
-                  rerum
-                </p>
-                <button class="movie-list-item-button">Watch</button>
-              </div>
-              <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/1.jpeg" alt="" />
-                <span class="movie-list-item-title">Her</span>
-                <p class="movie-list-item-desc">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Suscipit vitae quo tenetur eius error nobis iure accusamus
-                  rerum
-                </p>
-                <button class="movie-list-item-button">Watch</button>
-              </div>
-              <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/1.jpeg" alt="" />
-                <span class="movie-list-item-title">Her</span>
-                <p class="movie-list-item-desc">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Suscipit vitae quo tenetur eius error nobis iure accusamus
-                  rerum
-                </p>
-                <button class="movie-list-item-button">Watch</button>
-              </div>
-              <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/1.jpeg" alt="" />
-                <span class="movie-list-item-title">Her</span>
-                <p class="movie-list-item-desc">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Suscipit vitae quo tenetur eius error nobis iure accusamus
-                  rerum
-                </p>
-                <button class="movie-list-item-button">Watch</button>
-              </div>
-              <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/1.jpeg" alt="" />
-                <span class="movie-list-item-title">Her</span>
-                <p class="movie-list-item-desc">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Suscipit vitae quo tenetur eius error nobis iure accusamus
-                  rerum
-                </p>
-                <button class="movie-list-item-button">Watch</button>
-              </div>
-              <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/1.jpeg" alt="" />
-                <span class="movie-list-item-title">Her</span>
-                <p class="movie-list-item-desc">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Suscipit vitae quo tenetur eius error nobis iure accusamus
-                  rerum
-                </p>
-                <button class="movie-list-item-button">Watch</button>
-              </div>
             </div>
             <i class="fas fa-chevron-right arrow"></i>
+            </div>
+            
+       </div>     
+       <div class="movie-list-container">
+        <h1 class="movie-list-title">NEW RELEASES</h1>
+          <div class="movie-list-wrapper">
+          <div class="movie-list-2">
           </div>
+          <i class="fas fa-chevron-right arrow-1"></i>
         </div>
+     </div>
+      
+       <div class="container">  
+          <div class="featured-content-2">
+        <div class="conteiner">
+          <form>
+              <p class="featured-desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Suscipit vitae quo tenetur eius error nobis iure accusamus
+                  rerum
+                </p>
+            <button type="submit" id="search">Watch</button>
+          </form>
+        </div>
+       </div>
+       <div class="movie-list-container">
+        <h1 class="movie-list-title">NEW </h1>
+          <div class="movie-list-wrapper">
+          <div class="movie-list-3">
+          </div>
+          <i class="fas fa-chevron-right arrow-2"></i>
+          </div>
+          
+     </div>
+     <div class="movie-list-container">
+      <h1 class="movie-list-title">NEWs </h1>
+        <div class="movie-list-wrapper">
+        <div class="movie-list-4">
+        </div>
+        <i class="fas fa-chevron-right arrow-3"></i>
+        </div>
+       </div>
+      </div>
       </div>
     </div>
+     <script src ="index.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
