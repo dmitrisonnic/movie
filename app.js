@@ -1,12 +1,49 @@
-const arrows = document.querySelectorAll(".arrow");
+const arrows = document.querySelectorAll(".rightOne");
 const arrow = document.querySelectorAll(".arrow-1");
 const arro = document.querySelectorAll(".arrow-2");
+const left = document.querySelectorAll(".leftOne");
+const leftTwo = document.querySelectorAll(".lefttwo");
+const leftThree = document.querySelectorAll(".leftThree");
+const leftFor = document.querySelectorAll(".leftFor");
 const arr = document.querySelectorAll(".arrow-3");
 const movieLists = document.querySelectorAll(".movie-list");
+const mov = document.querySelectorAll(".movie-list");
+const movTwo = document.querySelectorAll(".movie-list-2");
+const movThree = document.querySelectorAll(".movie-list-3");
+const movFor = document.querySelectorAll(".movie-list-4");
 const movieList = document.querySelectorAll(".movie-list-2");
 const movieLis = document.querySelectorAll(".movie-list-3");
 const movieLi = document.querySelectorAll(".movie-list-4");
 
+left.forEach((arrow, i) => {
+  arrow.addEventListener("click", () => {
+    mov[i].style.transform = `translateX(${
+      mov[i].computedStyleMap().get("transform")[0].x.value + 300
+    }px)`;
+  });
+});
+
+leftTwo.forEach((arrow, i) => {
+  arrow.addEventListener("click", () => {
+    movTwo[i].style.transform = `translateX(${
+      movTwo[i].computedStyleMap().get("transform")[0].x.value + 300
+    }px)`;
+  });
+});
+leftThree.forEach((arrow, i) => {
+  arrow.addEventListener("click", () => {
+    movThree[i].style.transform = `translateX(${
+      movThree[i].computedStyleMap().get("transform")[0].x.value + 300
+    }px)`;
+  });
+});
+leftFor.forEach((arrow, i) => {
+  arrow.addEventListener("click", () => {
+    movFor[i].style.transform = `translateX(${
+      movFor[i].computedStyleMap().get("transform")[0].x.value + 300
+    }px)`;
+  });
+});
 arrows.forEach((arrow, i) => {
   arrow.addEventListener("click", () => {
     movieLists[i].style.transform = `translateX(${
@@ -21,7 +58,6 @@ arrow.forEach((arrow, i) => {
       movieList[i].computedStyleMap().get("transform")[0].x.value - 300
     }px)`;
   });
-  console.log(arrow);
 });
 arro.forEach((arrow, i) => {
   arrow.addEventListener("click", () => {
@@ -29,7 +65,6 @@ arro.forEach((arrow, i) => {
       movieLis[i].computedStyleMap().get("transform")[0].x.value - 300
     }px)`;
   });
-  console.log(arrow);
 });
 
 arr.forEach((arrow, i) => {
@@ -38,7 +73,6 @@ arr.forEach((arrow, i) => {
       movieLi[i].computedStyleMap().get("transform")[0].x.value - 300
     }px)`;
   });
-  console.log(arrow);
 });
 
 const ball = document.querySelector(".toggle-ball");

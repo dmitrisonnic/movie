@@ -271,6 +271,7 @@ img:hover {
 }
 .content-display {
   display: contents;
+  padding-left: 310px;
 }
 .movie-list-item-title {
   background-color: #333;
@@ -308,11 +309,47 @@ img:hover {
   opacity: 0;
   transition: 1s all ease-in-out;
 }
-.arrow {
+.rightOne {
   font-size: 120px;
   position: absolute;
   top: 90px;
   right: 0;
+  color: lightgrey;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.leftOne {
+  position: absolute;
+  font-size: 120px;
+  top: 90px;
+  left: 0;
+  color: lightgrey;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.lefttwo {
+  position: absolute;
+  font-size: 120px;
+  top: 90px;
+  left: 0;
+  color: lightgrey;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.leftThree {
+  position: absolute;
+  font-size: 120px;
+  top: 90px;
+  left: 0;
+  color: lightgrey;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.leftFor {
+  position: absolute;
+  font-size: 120px;
+  top: 90px;
+  left: 0;
   color: lightgrey;
   opacity: 0.5;
   cursor: pointer;
@@ -388,15 +425,8 @@ img:hover {
   .menu-container {
     display: none;
   }
-  .move {
-    background-color: #4dbf00;
-  }
 }
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 480px) {
-  .new {
-    width: 320px;
-    height: 160px;
-  }
 }
