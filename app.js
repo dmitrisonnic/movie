@@ -105,14 +105,13 @@ function movieSection(movies) {
 }
 
 function createVideoTemolate(data, content) {
-  content.innerHTML = '<p id ="content-close"></p>';
+  content.innerHTML = '<p id ="content-close">&#x2715</p>';
   const videos = data.results;
   const length = videos.length > 1 ? 1 : videos.length;
   const iframeContainer = document.createElement("div");
 
   for (let i = 0; i < length; i++) {
     const video = videos[i];
-    console.log(video);
     const iframe = createIframe(video);
     iframeContainer.appendChild(iframe);
     content.appendChild(iframeContainer);
@@ -125,10 +124,10 @@ function createMovieContainer(movies) {
 
   const movieTemplate = `
   <section class="section">
-   ${movieSection(movies)}
+  ${movieSection(movies)}
     </section>
      <div class="content">
-     <p id ="content-close">    ssssx</p>
+     <p id ="content-close"></p>
     </div>
     `;
 
@@ -158,6 +157,7 @@ function renderMoviesThree(data) {
   const movies = data.results;
   const movieBlock = createMovieContainer(movies);
   moviesContainerss.appendChild(movieBlock);
+  console.log(moviesContainerss);
 }
 
 function handError(error) {
@@ -168,7 +168,7 @@ function createIframe(video) {
   const iframe = document.createElement("iframe");
   iframe.src = `https://www.youtube.com/embed/${video.key}`;
   iframe.width = 360;
-  iframe.height = 315;
+  iframe.height = 270;
   iframe.allowFullscreen = true;
   return iframe;
 }
